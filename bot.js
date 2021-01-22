@@ -14,7 +14,7 @@ class Bot {
         
         this.discordClient.on("message", (msg) => {this.processMessage(msg)});
         
-        this.discordClient.login(process.env.TOKEN);
+        this.discordClient.login(Config.discord_token);
     }
     
     initialize() {
