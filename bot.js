@@ -37,7 +37,7 @@ class Bot {
     
     randomizeRoleColors() {
         for(var server in this.servers) {
-            var liveGuild = this.discordClient.guilds.cache.get(server);
+            var liveGuild = this.discordClient.guilds.get(server);
             
             if (!liveGuild) {
                 this.error("Guild with ID " + server+ " no longer exists or the bot has been removed from it.");
@@ -45,7 +45,7 @@ class Bot {
             }
             
             for(var role of this.servers[server]) {
-                var liveRole = liveGuild.roles.cache.get(role);
+                var liveRole = liveGuild.roles.get(role);
                 
                 liveRole.setColor(randomColour(), "Rainbowbot random role color randomizer.");
             }
