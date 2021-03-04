@@ -4,20 +4,18 @@
   "description": "Randomly changes peoples discord role color.",
   "main": "bot.js",
   "scripts": {
-    "start": "node ."
+    "start": "node bot.js"
   },
-  "engines": {
-    "node": "12.x",
-    "npm": "6.x"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tenDevoleper/TEN-RainbowBot.git"
   },
-  "keywords": [
-    "rainbow",
-    "bot",
-    "discord",
-    "role"
-  ],
   "author": "tenten#6944",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tenDevoleper/TEN-RainbowBot/issues"
+  },
+  "homepage": "https://github.com/tenDevoleper/TEN-RainbowBot#readme",
   "dependencies": {
     "discord.js": "^11.3.2",
     "randomcolor": "^0.5.4"
