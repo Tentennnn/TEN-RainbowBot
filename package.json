@@ -1,11 +1,11 @@
 {
-  "name": "rainbowbot",
+  "name": "TEN-RainbowRole",
   "version": "1.0.0",
   "description": "Randomly changes peoples discord role color.",
   "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bot.js"
+    "start": "node ."
   },
   "engines": {
     "node": "12.x",
@@ -17,7 +17,7 @@
     "discord",
     "role"
   ],
-  "author": "Ashleigh Carr",
+  "author": "tenten#6944",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^11.3.2",
