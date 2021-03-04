@@ -9,7 +9,7 @@ class Bot {
         this.discordClient = new discord.Client({sync: true});
         
         this.discordClient.on("ready", () => {
-        //this.client.user.setActivity('TEN RainBow Role !', { type: 'PLAYING' })    
+        this.discordClient.user.setActivity('tenmurai.xyz | TEN Rainbow Role', { type: 'PLAYING' })    
         this.initialize();});
         
         this.discordClient.on("message", (msg) => {this.processMessage(msg)});
@@ -82,3 +82,4 @@ class Bot {
 }
 
 var instance = new Bot();
+
