@@ -1,6 +1,6 @@
 var discord = require('discord.js');
 var fs = require('fs');
-var randomColour = require('randomcolor'); // yes, the creator of this package does not speak the real english
+var randomColour = require('randomcolor'); 
 var Config = require('./config.json');
 
 class Bot {
@@ -26,7 +26,7 @@ class Bot {
     }
     
     processMessage(msg) {
-        if(msg.content.startsWith(`${prefix}addrole`)) {
+        if(msg.content.startsWith(`${config.prefix}addrole`)) {
             for(var role of msg.mentions.roles.array()) {
                 msg.reply("☑️ Added `" + role.name + "` to list of rainbow roles.");
                 
