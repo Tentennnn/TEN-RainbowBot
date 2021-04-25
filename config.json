@@ -1,4 +1,5 @@
 {
     "discord_token": "BOT TOKEN", 
-    "randomize_delay": 60  // normal speed 60 || 60 second = 1 minute   
+    "randomize_delay": 60,
+    "prefix": "tr."
 }
