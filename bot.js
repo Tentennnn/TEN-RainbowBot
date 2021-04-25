@@ -26,7 +26,7 @@ class Bot {
     }
     
     processMessage(msg) {
-        if(msg.content.startsWith(">addrole")) {
+        if(msg.content.startsWith(`${prefix}addrole`)) {
             for(var role of msg.mentions.roles.array()) {
                 msg.reply("☑️ Added `" + role.name + "` to list of rainbow roles.");
                 
@@ -37,7 +37,7 @@ class Bot {
     
     randomizeRoleColors() {
         for(var server in this.servers) {
-            var liveGuild = this.discordClient.guilds.get(server);
+            var liveGuild = this.discordClient.guilds.cache.get(server);
             
             if (!liveGuild) {
                 this.error("Guild with ID " + server+ " no longer exists or the bot has been removed from it.");
@@ -45,9 +45,9 @@ class Bot {
             }
             
             for(var role of this.servers[server]) {
-                var liveRole = liveGuild.roles.get(role);
+                var liveRole = liveGuild.roles.cache.get(role);
                 
-                liveRole.setColor(randomColour(), "Rainbowbot random role color randomizer.");
+                liveRole.setColor(randomColour(), "TENAPI HAS CHANG ROLE COLOR!");
             }
         }
     }
