@@ -27,7 +27,8 @@
 
 {
     "discord_token": "BOT TOKEN", 
-    "randomize_delay": 20            
+    "randomize_delay": 20,  
+    "prefix": "tr."       
 }
 ```
 
