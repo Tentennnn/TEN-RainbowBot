@@ -1,7 +1,7 @@
-var discord = require('discord.js');
-var fs = require('fs');
-var randomColour = require('randomcolor'); 
-var Config = require('./config.json');
+const discord = require('discord.js');
+const fs = require('fs');
+const randomColour = require('randomcolor'); 
+const { discord_token, prefix, randomize_delay } = require('./config.json');
 
 class Bot {
     constructor(){
@@ -9,12 +9,12 @@ class Bot {
         this.discordClient = new discord.Client({sync: true});
         
         this.discordClient.on("ready", () => {
-        this.discordClient.user.setActivity('tenmurai.xyz | TEN Rainbow Role', { type: 'PLAYING' })    
+        this.discordClient.user.setActivity('dc.apsarabot.xyz | TEN Rainbow Role', { type: 'PLAYING' })    
         this.initialize();});
         
         this.discordClient.on("message", (msg) => {this.processMessage(msg)});
         
-        this.discordClient.login(Config.discord_token);
+        this.discordClient.login(discord_token);
     }
     
     initialize() {
@@ -22,11 +22,11 @@ class Bot {
         
         setInterval(() => {
             this.randomizeRoleColors();
-        }, Config.randomize_delay*1000);
+        }, randomize_delay*1000);
     }
     
     processMessage(msg) {
-        if(msg.content.startsWith(`${Config.prefix}addrole`)) {
+        if(msg.content.startsWith(`${prefix}addrole`)) {
             for(var role of msg.mentions.roles.array()) {
                 msg.reply("☑️ Added `" + role.name + "` to list of rainbow roles.");
                 
