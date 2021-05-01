@@ -26,7 +26,7 @@ class Bot {
     }
     
     processMessage(msg) {
-        if(msg.content.startsWith(`${config.prefix}addrole`)) {
+        if(msg.content.startsWith(`${Config.prefix}addrole`)) {
             for(var role of msg.mentions.roles.array()) {
                 msg.reply("☑️ Added `" + role.name + "` to list of rainbow roles.");
                 
