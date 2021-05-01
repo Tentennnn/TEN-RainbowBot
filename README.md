@@ -1,7 +1,10 @@
 # Discord.js RainBow Bot
 
+**Discord Server:**
+[https://discord.gg/VYRyTJ3](https://discord.gg/VYRyTJ3)
 
-## [**DISCORD SUPPORT SERVER INVITE**](https://dc.apsarabot.xyz/)
+**Website:**
+[https://apsaraobot.xyz/](https://apsarabot.xyz)
 
 
 
@@ -31,11 +34,4 @@
     "prefix": "tr."       
 }
 ```
-
-
-**Discord Server:**
-[https://discord.gg/GgjJZCyYKD](https://discord.gg/VYRyTJ3)
-
-**Website:**
-[https://apsaraobot.xyz/](https://apsarabot.xyz)
 
